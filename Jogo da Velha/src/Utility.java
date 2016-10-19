@@ -18,7 +18,6 @@ public class Utility {
 	public static void realizaJogada1(String[][] tabuleiro, int linha, int coluna){
 		tabuleiro[linha - 1][coluna - 1] = "X";// SOMENTE APÓS TODAS AS VERIFICACOES, A JOGADA É DE FATO ATRIBUIDA AO TABULEIRO
 	}
-	
 	public static void realizaJogada2(String[][] tabuleiro, int linha, int coluna){	
 		tabuleiro[linha - 1][coluna - 1] = "O";// SOMENTE APÓS TODAS AS VERIFICACOES, A JOGADA É DE FATO ATRIBUIDA AO TABULEIRO	
 	}
@@ -29,7 +28,7 @@ public class Utility {
 	}
 	public static void verificaDeuVelha(boolean deuvelha){
 		if (deuvelha == false) {// VERIFICO SE DEU VELHA
-			System.out.println("\n\n\n!!!!!!SHIIIIIIII DEU VELHA!!!!!!!!");
+			System.out.println("!!!!!!SHIIIIIIII DEU VELHA!!!!!!!!");
 		}
 	}
 

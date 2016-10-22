@@ -41,12 +41,15 @@ public class Funcoes {
 		String start = in.nextLine();
 	}
 	
-	public static void mostraValores(boolean p, boolean q, boolean r) {
+	public static int mostraValores(boolean p, boolean q, boolean r) {
 		Scanner in = new Scanner(System.in);
-		System.out.println("\nAs suas escolhas ficaram desta maneira");
-		
-		System.out.print("Aperte [ENTER] para continuar\n");
-		String start = in.nextLine();
+		System.out.println("\nAs suas escolhas ficaram desta maneira:");
+		System.out.println("\nA preposição 'P' ficou com o valor:"+p);
+		System.out.println("\nA preposição 'Q' ficou com o valor:"+q);
+		System.out.println("\nA preposição 'R' ficou com o valor:"+r);
+		System.out.println("\nVocê Confirma suas escolhas? [Digite '1' para SIM e '0' para NÃO]");
+		int decision = in.nextInt();
+		return decision;
 	}
 
 }

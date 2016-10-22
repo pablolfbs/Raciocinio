@@ -66,7 +66,7 @@ public class Funcoes {
 		prep[7] = Funcoes.conversor(pORq_AND_pORr);
 		prep[8] = Funcoes.conversor(equacaoFinal);
 		System.out.println("|_P_|_Q_|_R_|_(Q^R)_|_(PvQ)_|_(PvR)_|_Pv(Q^R)_|_(PvQ)^(PvR)_|_Pv(Q^R)<->(PvQ)^(PvR)_|");
-		System.out.println("|_"+prep[0]+"_|_"+prep[1]+"_|_"+prep[2]+"_|___"+prep[3]+"___|___"+prep[4]+"__|___"+prep[5]+"__|_____"+prep[6]+"___|______"+prep[7]+"____|___________"+prep[8]+"___________|\n\n");
+		System.out.println("|_"+prep[0]+"_|_"+prep[1]+"_|_"+prep[2]+"_|___"+prep[3]+"___|___"+prep[4]+"__|___"+prep[5]+"__|____"+prep[6]+"____|_____"+prep[7]+"_____|___________"+prep[8]+"___________|\n\n");
 		System.out.print("APERTE [ENTER] PARA FINALIZAR A APLICAÇÃO");
 		String finalizacao = in.nextLine();
 		System.out.println("-------------------");
@@ -82,5 +82,51 @@ public class Funcoes {
 			return 70;
 		}
 	}
+	
+	public static void tabelaProvisoria(boolean x, boolean y, boolean z){
+		char[] prep = new char[3];
+		prep[0] = Funcoes.conversor(x);
+		prep[1] = Funcoes.conversor(y);
+		prep[2] = Funcoes.conversor(z);
+		System.out.println("\n|_Q_|_R_|_(Q^R)_|");
+		System.out.println("|_"+prep[0]+"_|_"+prep[1]+"_|___"+prep[2]+"___|");
+	}
+	
+	public static void tabelaProvisoria2(boolean x, boolean y, boolean z){
+		char[] prep = new char[3];
+		prep[0] = Funcoes.conversor(x);
+		prep[1] = Funcoes.conversor(y);
+		prep[2] = Funcoes.conversor(z);
+		System.out.println("\n|_P_|_Q_|_(PvQ)_|");
+		System.out.println("|_"+prep[0]+"_|_"+prep[1]+"_|___"+prep[2]+"___|");
+	}
+	
+	public static void tabelaProvisoria3(boolean x, boolean y, boolean z){
+		char[] prep = new char[3];
+		prep[0] = Funcoes.conversor(x);
+		prep[1] = Funcoes.conversor(y);
+		prep[2] = Funcoes.conversor(z);
+		System.out.println("\n|_P_|_R_|_(PvR)_|");
+		System.out.println("|_"+prep[0]+"_|_"+prep[1]+"_|___"+prep[2]+"__|");
+	}
+	
+	public static void tabelaProvisoria4(boolean x, boolean y, boolean z){
+		char[] prep = new char[3];
+		prep[0] = Funcoes.conversor(x);
+		prep[1] = Funcoes.conversor(y);
+		prep[2] = Funcoes.conversor(z);
+		System.out.println("\n|_P_|_(Q^R)_|_Pv(Q^R)_|");
+		System.out.println("|_"+prep[0]+"_|___"+prep[1]+"___|____"+prep[2]+"___|");
+	}
+	
+	public static void tabelaProvisoria5(boolean x, boolean y, boolean z){
+		char[] prep = new char[3];
+		prep[0] = Funcoes.conversor(x);
+		prep[1] = Funcoes.conversor(y);
+		prep[2] = Funcoes.conversor(z);
+		System.out.println("\n|_(PvQ)_|_(PvR)_|_(PvQ)^(PvR)_|");
+		System.out.println("|___"+prep[0]+"___|__"+prep[1]+"__|______"+prep[2]+"_____|");
+	}
+
 
 }

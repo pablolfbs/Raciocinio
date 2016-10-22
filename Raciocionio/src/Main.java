@@ -7,18 +7,19 @@ public class Main {
 		int controler = 0;
 		boolean p = true, q = true, r = true;
 		
-		System.out.println("\nEsse programa irá resolver este problema --> Pv(Q^R)<->(PvQ)^(PvR)");
-		System.out.println("Mas antes digite os valores das preposições P, Q e R.");
-		System.out.println("\n\n!!!!!!Atenção!!!!!!\n\n");
-		System.out.println("Para selecionar o valor VERDADEIRO: Digite o numero '1' e aperte [ENTER]");
-		System.out.println("Para selecionar o valor FALSO: Digite o numero '0' e aperte [ENTER]");
-		System.out.print("Aperte [ENTER] para continuar\n");
-		String start = in.nextLine();
+		Funcoes.intro();
 		p = Funcoes.pegaValor(controler);
 		controler += 1;
 		q = Funcoes.pegaValor(controler);
 		controler += 1;
 		r = Funcoes.pegaValor(controler);
+		Funcoes.mostraValores(p,q,r);
+		boolean qANDr = Equacoes.first(q,r);
+		boolean pORq = Equacoes.second(p,q);
+		boolean pORr = Equacoes.third(p,r);
+		boolean p_OR_qANDr = Equacoes.fourth(p,qANDr);
+		boolean pORq_AND_pORr = Equacoes.fiveth(pORq, pORr);
+		
 		
 	}
 

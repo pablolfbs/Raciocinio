@@ -17,7 +17,8 @@ public class Main {
 			r = Funcoes.pegaValor(controler);
 			decision = Funcoes.mostraValores(p, q, r);
 			if (decision == 0) {
-				System.out.println("\nEnt„o digite os valores novamente por favor");
+				controler = 0;
+				System.out.println("\nEnt√£o digite os valores novamente por favor");
 			}
 		} while (decision == 0);
 		boolean qANDr = Equacoes.first(q, r);

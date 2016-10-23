@@ -32,9 +32,9 @@ public class Funcoes {
 
 	public static void intro() {
 		Scanner in = new Scanner(System.in);
-		System.out.println("\nEsse programa ir·° resolver este problema --> Pv(Q^R)<->(PvQ)^(PvR)");
-		System.out.println("Mas antes digite os valores das preposiÁıes P, Q e R.");
-		System.out.println("\n\n!!!!!!AtenÁ„o!!!!!!\n\n");
+		System.out.println("\nEsse programa ir√° resolver este problema --> Pv(Q^R)<->(PvQ)^(PvR)");
+		System.out.println("Mas antes digite os valores das preposi√ß√µes P, Q e R.");
+		System.out.println("\n\n!!!!!!Aten√ß√£o!!!!!!\n\n");
 		System.out.println("Para selecionar o valor VERDADEIRO: Digite o numero '1' e aperte [ENTER]");
 		System.out.println("Para selecionar o valor FALSO: Digite o numero '0' e aperte [ENTER]");
 		System.out.print("Aperte [ENTER] para continuar\n");
@@ -44,17 +44,17 @@ public class Funcoes {
 	public static int mostraValores(boolean p, boolean q, boolean r) {
 		Scanner in = new Scanner(System.in);
 		System.out.println("\nAs suas escolhas ficaram desta maneira:");
-		System.out.println("\nA preposiÁ„o 'P' ficou com o valor: " + p);
-		System.out.println("\nA preposiÁ„o 'Q' ficou com o valor: " + q);
-		System.out.println("\nA preposiÁ„o 'R' ficou com o valor: " + r);
-		System.out.println("\nVocÍ Confirma suas escolhas? [Digite '1' para SIM e '0' para N√O]");
+		System.out.println("\nA preposi√ß√£o 'P' ficou com o valor: " + p);
+		System.out.println("\nA preposi√ß√£o 'Q' ficou com o valor: " + q);
+		System.out.println("\nA preposi√ß√£o 'R' ficou com o valor: " + r);
+		System.out.println("\nVoc√™ Confirma suas escolhas? [Digite '1' para SIM e '0' para N√ÉO]");
 		int decision = in.nextInt();
 		return decision;
 	}
 
 	public static void tabela(boolean p, boolean q, boolean r, boolean qANDr, boolean pORq, boolean pORr, boolean p_OR_qANDr, boolean pORq_AND_pORr, boolean equacaoFinal) {
 		Scanner in = new Scanner(System.in);
-		//Essa variavel 'prep' que estou criando È o nome reduzido de preposiÁ„o, irei criar um array de 9 posiÁıes.
+		//Essa variavel 'prep' que estou criando √© o nome reduzido de preposi√ß√£o, irei criar um array de 9 posi√ß√µes.
 		char[] prep  = new char[9];
 		prep[0] = Funcoes.conversor(p);
 		prep[1] = Funcoes.conversor(q);
@@ -67,12 +67,12 @@ public class Funcoes {
 		prep[8] = Funcoes.conversor(equacaoFinal);
 		System.out.println("|_P_|_Q_|_R_|_(Q^R)_|_(PvQ)_|_(PvR)_|_Pv(Q^R)_|_(PvQ)^(PvR)_|_Pv(Q^R)<->(PvQ)^(PvR)_|");
 		System.out.println("|_"+prep[0]+"_|_"+prep[1]+"_|_"+prep[2]+"_|___"+prep[3]+"___|___"+prep[4]+"__|___"+prep[5]+"__|____"+prep[6]+"____|_____"+prep[7]+"_____|___________"+prep[8]+"___________|\n\n");
-		System.out.print("APERTE [ENTER] PARA FINALIZAR A APLICA«√O");
+		System.out.print("APERTE [ENTER] PARA FINALIZAR A APLICA√á√ÉO");
 		String finalizacao = in.nextLine();
 		System.out.println("-------------------");
 		System.out.println("        ----------");
 		System.out.println("            -----");
-		System.out.println("APLICA«√O FINALIZADA");
+		System.out.println("APLICA√á√ÉO FINALIZADA");
 	}
 	
 	private static char conversor(boolean x){
